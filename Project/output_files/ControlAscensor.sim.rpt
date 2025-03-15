@@ -1,0 +1,342 @@
+Simulator report for ControlAscensor
+Mon May 22 13:00:25 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 4.0 us       ;
+; Simulation Netlist Size     ; 132 nodes    ;
+; Simulation Coverage         ;      67.65 % ;
+; Total Number of Transitions ; 963          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                        ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                                           ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                            ;               ;
+; Vector input source                                                                        ; U:/FCPract/FCPract/421_04/Control_Ascensor.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                             ; On            ;
+; Check outputs                                                                              ; Off                                            ; Off           ;
+; Report simulation coverage                                                                 ; On                                             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                             ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                             ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                             ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                            ; Off           ;
+; Detect glitches                                                                            ; Off                                            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                            ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                           ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      67.65 % ;
+; Total nodes checked                                 ; 132          ;
+; Total output ports checked                          ; 136          ;
+; Total output ports with complete 1/0-value coverage ; 92           ;
+; Total output ports with no 1/0-value coverage       ; 43           ;
+; Total output ports with no 1-value coverage         ; 44           ;
+; Total output ports with no 0-value coverage         ; 43           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                               ;
++----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                        ; Output Port Name                                                                                                                    ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_reg_bit1a[0] ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|safe_q[0]               ; regout           ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_reg_bit1a[2] ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|safe_q[2]               ; regout           ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_reg_bit1a[1] ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|safe_q[1]               ; regout           ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita0   ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita0      ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita0   ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_reg_bit1a[1]  ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|safe_q[1]                ; regout           ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_reg_bit1a[0]  ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|safe_q[0]                ; regout           ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita0    ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita0       ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita0    ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita0~COUT  ; cout             ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita1    ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita1       ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita1    ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita1~COUT  ; cout             ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita1~0  ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_a6j:auto_generated|counter_comb_bita1~0     ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita1   ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita1      ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita1   ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita2   ; |ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component|cntr_reh:auto_generated|counter_comb_bita2      ; combout          ;
+; |ControlAscensor|UC:UC|UC_DIR:UC_DIR|FlipFlopD:inst|inst                                                                         ; |ControlAscensor|UC:UC|UC_DIR:UC_DIR|FlipFlopD:inst|inst                                                                            ; regout           ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|ff2                                                                                         ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|ff2                                                                                            ; regout           ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|ff0                                                                                         ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|ff0                                                                                            ; regout           ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst18~0                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst18~0                                                                                       ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode85w[3]~0       ; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode85w[3]~0          ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|ff1                                                                                         ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|ff1                                                                                            ; regout           ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode74w[3]~0       ; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode74w[3]~0          ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst2|inst                                          ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst2|inst                                             ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode63w[3]~0       ; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode63w[3]~0          ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode52w[3]~0       ; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode52w[3]~0          ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode41w[3]~0       ; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode41w[3]~0          ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode30w[3]~0       ; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode30w[3]~0          ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst4|inst                                          ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst4|inst                                             ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode19w[3]~0       ; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode19w[3]~0          ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode1w[3]          ; |ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component|decode_s6f:auto_generated|w_anode1w[3]             ; combout          ;
+; |ControlAscensor|UP:UP|Display:Display|inst3                                                                                     ; |ControlAscensor|UP:UP|Display:Display|inst3                                                                                        ; combout          ;
+; |ControlAscensor|UP:UP|Display:Display|inst6                                                                                     ; |ControlAscensor|UP:UP|Display:Display|inst6                                                                                        ; combout          ;
+; |ControlAscensor|UP:UP|Display:Display|inst5~0                                                                                   ; |ControlAscensor|UP:UP|Display:Display|inst5~0                                                                                      ; combout          ;
+; |ControlAscensor|UP:UP|Display:Display|inst4~0                                                                                   ; |ControlAscensor|UP:UP|Display:Display|inst4~0                                                                                      ; combout          ;
+; |ControlAscensor|UP:UP|Display:Display|inst2~0                                                                                   ; |ControlAscensor|UP:UP|Display:Display|inst2~0                                                                                      ; combout          ;
+; |ControlAscensor|UP:UP|Display:Display|inst1                                                                                     ; |ControlAscensor|UP:UP|Display:Display|inst1                                                                                        ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst3|inst5                                            ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst3|inst5                                               ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst6|inst5                                            ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst6|inst5                                               ; regout           ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~0                                                        ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~0                                                           ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~2                                                        ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~2                                                           ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~4                                                        ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~4                                                           ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~6                                                        ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~6                                                           ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~0                                                         ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~0                                                            ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~1                                                         ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~1                                                            ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~2                                                         ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~2                                                            ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~5                                                         ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~5                                                            ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~6                                                         ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~6                                                            ; combout          ;
+; |ControlAscensor|UC:UC|UC_DIR:UC_DIR|inst1~0                                                                                     ; |ControlAscensor|UC:UC|UC_DIR:UC_DIR|inst1~0                                                                                        ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst13~0                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst13~0                                                                                       ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst9~2                                                                                     ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst9~2                                                                                        ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst9                                                                                       ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst9                                                                                          ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst18~1                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst18~1                                                                                       ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst13~1                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst13~1                                                                                       ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~1                                                                 ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~1                                                                    ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~2                                                                 ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~2                                                                    ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~3                                                                 ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~3                                                                    ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst13~2                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst13~2                                                                                       ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst13~3                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst13~3                                                                                       ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst33~0                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst33~0                                                                                       ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst                                                                   ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst                                                                      ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst33~1                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst33~1                                                                                       ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst33~2                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst33~2                                                                                       ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst20~0                                                                                    ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst20~0                                                                                       ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst3|inst4~0                                          ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst3|inst4~0                                             ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst6|inst4~0                                          ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst6|inst4~0                                             ; combout          ;
+; |ControlAscensor|UP:UP|Pis:Pis|inst3                                                                                             ; |ControlAscensor|UP:UP|Pis:Pis|inst3                                                                                                ; combout          ;
+; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst9~3                                                                                     ; |ControlAscensor|UC:UC|UC_MOV:UC_MOV|inst9~3                                                                                        ; combout          ;
+; |ControlAscensor|Direccio                                                                                                        ; |ControlAscensor|Direccio                                                                                                           ; padio            ;
+; |ControlAscensor|Moviment                                                                                                        ; |ControlAscensor|Moviment                                                                                                           ; padio            ;
+; |ControlAscensor|Obrir_porta[6]                                                                                                  ; |ControlAscensor|Obrir_porta[6]                                                                                                     ; padio            ;
+; |ControlAscensor|Obrir_porta[2]                                                                                                  ; |ControlAscensor|Obrir_porta[2]                                                                                                     ; padio            ;
+; |ControlAscensor|Pis_7s[6]                                                                                                       ; |ControlAscensor|Pis_7s[6]                                                                                                          ; padio            ;
+; |ControlAscensor|Pis_7s[5]                                                                                                       ; |ControlAscensor|Pis_7s[5]                                                                                                          ; padio            ;
+; |ControlAscensor|Pis_7s[4]                                                                                                       ; |ControlAscensor|Pis_7s[4]                                                                                                          ; padio            ;
+; |ControlAscensor|Pis_7s[3]                                                                                                       ; |ControlAscensor|Pis_7s[3]                                                                                                          ; padio            ;
+; |ControlAscensor|Pis_7s[2]                                                                                                       ; |ControlAscensor|Pis_7s[2]                                                                                                          ; padio            ;
+; |ControlAscensor|Pis_7s[1]                                                                                                       ; |ControlAscensor|Pis_7s[1]                                                                                                          ; padio            ;
+; |ControlAscensor|Pis_7s[0]                                                                                                       ; |ControlAscensor|Pis_7s[0]                                                                                                          ; padio            ;
+; |ControlAscensor|Pis_actual[7]                                                                                                   ; |ControlAscensor|Pis_actual[7]                                                                                                      ; padio            ;
+; |ControlAscensor|Pis_actual[6]                                                                                                   ; |ControlAscensor|Pis_actual[6]                                                                                                      ; padio            ;
+; |ControlAscensor|Pis_actual[5]                                                                                                   ; |ControlAscensor|Pis_actual[5]                                                                                                      ; padio            ;
+; |ControlAscensor|Pis_actual[4]                                                                                                   ; |ControlAscensor|Pis_actual[4]                                                                                                      ; padio            ;
+; |ControlAscensor|Pis_actual[3]                                                                                                   ; |ControlAscensor|Pis_actual[3]                                                                                                      ; padio            ;
+; |ControlAscensor|Pis_actual[2]                                                                                                   ; |ControlAscensor|Pis_actual[2]                                                                                                      ; padio            ;
+; |ControlAscensor|Pis_actual[1]                                                                                                   ; |ControlAscensor|Pis_actual[1]                                                                                                      ; padio            ;
+; |ControlAscensor|Pis_actual[0]                                                                                                   ; |ControlAscensor|Pis_actual[0]                                                                                                      ; padio            ;
+; |ControlAscensor|Pis_demanat[6]                                                                                                  ; |ControlAscensor|Pis_demanat[6]                                                                                                     ; padio            ;
+; |ControlAscensor|Pis_demanat[2]                                                                                                  ; |ControlAscensor|Pis_demanat[2]                                                                                                     ; padio            ;
+; |ControlAscensor|CK                                                                                                              ; |ControlAscensor|CK~corein                                                                                                          ; combout          ;
+; |ControlAscensor|SP                                                                                                              ; |ControlAscensor|SP~corein                                                                                                          ; combout          ;
+; |ControlAscensor|Polsador[6]                                                                                                     ; |ControlAscensor|Polsador[6]~corein                                                                                                 ; combout          ;
+; |ControlAscensor|Polsador[2]                                                                                                     ; |ControlAscensor|Polsador[2]~corein                                                                                                 ; combout          ;
++----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                             ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                               ; Output Port Name                                                                        ; Output Port Type ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst|inst  ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst|inst  ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst5|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst5|inst ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst1|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst1|inst ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst3|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst3|inst ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst6|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst6|inst ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst7|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst7|inst ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst|inst5    ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst|inst5    ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst2|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst2|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst4|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst4|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst5|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst5|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst8|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst8|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst9|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst9|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~1               ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~1               ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~3               ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~3               ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~5               ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~5               ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~3                ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~3                ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~4                ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~4                ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~0                        ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~0                        ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~4                        ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~4                        ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst|inst4~0  ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst|inst4~0  ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst2|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst2|inst4~0 ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst4|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst4|inst4~0 ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst5|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst5|inst4~0 ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst8|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst8|inst4~0 ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst9|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst9|inst4~0 ; combout          ;
+; |ControlAscensor|Obrir_porta[7]                                                         ; |ControlAscensor|Obrir_porta[7]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[5]                                                         ; |ControlAscensor|Obrir_porta[5]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[4]                                                         ; |ControlAscensor|Obrir_porta[4]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[3]                                                         ; |ControlAscensor|Obrir_porta[3]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[1]                                                         ; |ControlAscensor|Obrir_porta[1]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[0]                                                         ; |ControlAscensor|Obrir_porta[0]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[7]                                                         ; |ControlAscensor|Pis_demanat[7]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[5]                                                         ; |ControlAscensor|Pis_demanat[5]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[4]                                                         ; |ControlAscensor|Pis_demanat[4]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[3]                                                         ; |ControlAscensor|Pis_demanat[3]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[1]                                                         ; |ControlAscensor|Pis_demanat[1]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[0]                                                         ; |ControlAscensor|Pis_demanat[0]                                                         ; padio            ;
+; |ControlAscensor|RST                                                                    ; |ControlAscensor|RST~corein                                                             ; combout          ;
+; |ControlAscensor|Polsador[7]                                                            ; |ControlAscensor|Polsador[7]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[5]                                                            ; |ControlAscensor|Polsador[5]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[4]                                                            ; |ControlAscensor|Polsador[4]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[3]                                                            ; |ControlAscensor|Polsador[3]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[1]                                                            ; |ControlAscensor|Polsador[1]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[0]                                                            ; |ControlAscensor|Polsador[0]~corein                                                     ; combout          ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                             ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                               ; Output Port Name                                                                        ; Output Port Type ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst|inst  ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst|inst  ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst5|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst5|inst ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst1|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst1|inst ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst3|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst3|inst ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst6|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst6|inst ; combout          ;
+; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst7|inst ; |ControlAscensor|UP:UP|Obrir_Alliberar:Obrir_Alliberar|Obrir_Alliberar_1_bit:inst7|inst ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst|inst5    ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst|inst5    ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst2|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst2|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst4|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst4|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst5|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst5|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst8|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst8|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst9|inst5   ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst9|inst5   ; regout           ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~1               ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~1               ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~3               ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~3               ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~5               ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_amunt:inst1|inst10~5               ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~3                ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~3                ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~4                ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_PP_avall:inst|inst10~4                ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~0                        ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~0                        ; combout          ;
+; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~4                        ; |ControlAscensor|UP:UP|Senyals_UC:inst|Senyals_UC_P:inst2|inst~4                        ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst|inst4~0  ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst|inst4~0  ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst2|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst2|inst4~0 ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst4|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst4|inst4~0 ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst5|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst5|inst4~0 ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst8|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst8|inst4~0 ; combout          ;
+; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst9|inst4~0 ; |ControlAscensor|UP:UP|Pisos_demanats:Pisos_demanats|Pisos_demanats_1_bit:inst9|inst4~0 ; combout          ;
+; |ControlAscensor|Obrir_porta[7]                                                         ; |ControlAscensor|Obrir_porta[7]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[5]                                                         ; |ControlAscensor|Obrir_porta[5]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[4]                                                         ; |ControlAscensor|Obrir_porta[4]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[3]                                                         ; |ControlAscensor|Obrir_porta[3]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[1]                                                         ; |ControlAscensor|Obrir_porta[1]                                                         ; padio            ;
+; |ControlAscensor|Obrir_porta[0]                                                         ; |ControlAscensor|Obrir_porta[0]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[7]                                                         ; |ControlAscensor|Pis_demanat[7]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[5]                                                         ; |ControlAscensor|Pis_demanat[5]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[4]                                                         ; |ControlAscensor|Pis_demanat[4]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[3]                                                         ; |ControlAscensor|Pis_demanat[3]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[1]                                                         ; |ControlAscensor|Pis_demanat[1]                                                         ; padio            ;
+; |ControlAscensor|Pis_demanat[0]                                                         ; |ControlAscensor|Pis_demanat[0]                                                         ; padio            ;
+; |ControlAscensor|Polsador[7]                                                            ; |ControlAscensor|Polsador[7]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[5]                                                            ; |ControlAscensor|Polsador[5]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[4]                                                            ; |ControlAscensor|Polsador[4]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[3]                                                            ; |ControlAscensor|Polsador[3]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[1]                                                            ; |ControlAscensor|Polsador[1]~corein                                                     ; combout          ;
+; |ControlAscensor|Polsador[0]                                                            ; |ControlAscensor|Polsador[0]~corein                                                     ; combout          ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon May 22 13:00:25 2023
+Info: Command: quartus_sim --simulation_results_format=VWF ControlAscensor -c ControlAscensor
+Info (324025): Using vector source file "U:/FCPract/FCPract/421_04/Control_Ascensor.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      67.65 %
+Info (328052): Number of transitions in simulation is 963
+Info (324045): Vector file ControlAscensor.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4474 megabytes
+    Info: Processing ended: Mon May 22 13:00:25 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
