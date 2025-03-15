@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ControlAscensor">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ControlAscensor|UP:UP|Pis:Pis|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_a6j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ControlAscensor|UP:UP|Pis:Pis|lpm_counter1:inst1|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_reh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ControlAscensor|UP:UP|Pis:Pis|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_s6f.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
