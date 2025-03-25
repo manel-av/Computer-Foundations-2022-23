@@ -1,17 +1,61 @@
-# Computer Foundations
+# Computer Fundamentals - Elevator Controller Project
 
-## Course Description
+## About This Course
+This hardware design course challenged me to implement a functional elevator controller using FPGA technology. Through this project, I gained hands-on experience with digital system design, finite state machines, and hardware description languages.
 
-This course introduced us to digital logic, basic data representation, and how computers process information at a fundamental level. We covered binary systems, logic gates, and the inner workings of a CPU.
+## Project Overview
+**Krökem Elevators Controller** is an 8-floor elevator control system featuring:
+- Bidirectional movement control (up/down)
+- Call request memory
+- Door operation management
+- Visual floor indicators (7-segment display + LED array)
 
-## Practical Work
+## Technical Implementation
 
-For the practical project, we designed a digital elevator controller using Quartus. The goal was to create a circuit capable of detecting the elevator's current floor and displaying it on a seven-segment display. The controller handled button inputs for selecting floors and managed door operations automatically based on movement logic.
+### System Architecture
+The controller consists of two main units:
+1. **Processing Unit (UP)** with five modules:
+   - `Floor_Requests`: Manages pending floor calls
+   - `Floor`: Tracks current elevator position
+   - `Open_Release`: Handles door operations
+   - `UC_Signals`: Generates control signals
+   - `Display`: Drives the 7-segment display
 
-The system was implemented using:
+2. **Control Unit (UC)** with two state machines:
+   - `UC_DIR`: Determines movement direction
+   - `UC_MOV`: Manages movement and door timing
 
-- **Finite State Machines (FSMs):** Defined the different states of the elevator (idle, moving up, moving down, door opening, door closing).
-- **Combinational and Sequential Logic:** Used logic gates and flip-flops to process inputs and control outputs.
-- **Seven-Segment Display:** Showed the current floor dynamically as the elevator moved.
+### Key Specifications
+- **8 floors** (0-7)
+- **4 clock cycles** per floor transition
+- **3 clock cycles** minimum door open time
+- **Memory** of all pending requests
+- **Smart direction handling**: Continues current direction until no further requests
 
-The implementation ensured that the elevator operated correctly under different scenarios, such as receiving multiple floor requests, maintaining priority logic, and handling door safety conditions.
+### Input/Output Signals
+| **Inputs**              | **Outputs**               |
+|-------------------------|---------------------------|
+| `Button[7..0]`          | `Floor_7seg[6..0]`        |
+| `SP` (door sensor)      | `Current_Floor[7..0]`     |
+| `CK` (clock)            | `Requested_Floors[7..0]`  |
+| `RST` (reset)           | `Open_Door[7..0]`         |
+|                         | `Movement`, `Direction`   |
+
+## Development Process
+
+### Design Challenges
+1. **Direction Logic**: Implementing the "continue until no further requests" behavior
+   - Solution: Used `PP_up` and `PP_down` signals to track pending requests
+
+2. **Door Timing**: Ensuring doors stay open for exactly 3 cycles after `SP=0`
+   - Solution: Created a 6-state FSM in `UC_MOV`
+
+3. **Request Management**: Clearing floor requests after service
+   - Solution: Implemented `Release_Floor` signal in coordination with door operations
+  
+## Final Thoughts
+This project provided fundamental understanding of:
+- Digital system design principles
+- Finite state machine implementation
+- Hardware description languages (VHDL/Verilog)
+- FPGA programming and testing
